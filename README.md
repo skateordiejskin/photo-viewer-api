@@ -10,19 +10,19 @@ Requirements:
 1) If not installed, install homebrew, mariadb/MySQL, PHP, and Redis
 
     ```
-    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+     /bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-    $ brew install php redis composer mariadb
-    $ brew services start php
-    $ brew services start redis
-    $ brew services start mariadb
+     brew install php redis composer mariadb
+     brew services start php
+     brew services start redis
+     brew services start mariadb
     ```
 2) Clone repo and cd into folder
 
-     `$ composer install`
+     ` composer install`
 3) Create .env file from sample and update values for database and redis(if not installed using default settings)
 
-    `$ cp .env.example .env`
+    ` cp .env.example .env`
 
 
 4) Create database named 'photo_viewer'
