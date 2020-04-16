@@ -17,7 +17,10 @@ Requirements:
      brew services start redis
      brew services start mariadb
     ```
+    Note: If Xcode is not installed, you will be prompted to install clang and command line tools. When the notification appears, click install
 2) Clone repo and cd into folder
+
+3) Install packages
 
      ` composer install`
 3) Create .env file from sample and update values for database and redis(if not installed using default settings)
@@ -47,3 +50,8 @@ Requirements:
 
     `php artisan serve`
 
+
+Notes:
+
+-  `./app/Console/Commands/PhotoImport.php` and `./app/Console/Commands/PhotoProcess.php` are the two artisan commands. They contain all of the download and storage logic
+- `./app/Http/Controllers/PhotosController.php` is the controller that does most of the heavy lifting
